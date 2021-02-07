@@ -37,7 +37,6 @@ def update(current,choice,game_desc):
     print("I shouldn't do that right now.")
     return current
 
-
 def render(current):
     print("\n\n")
     print(current["name"])
@@ -54,13 +53,13 @@ def main():
     game_desc = load("game.json")
     current = find_passage(game_desc, game_desc["startnode"])
     choice = ""
-
     while choice != "quit" and current != ():
         current = update(current,choice,game_desc)
         render(current)
         choice = get_input()
 
     print("Thanks for playing!")
+
 
 
 if __name__ == "__main__":
