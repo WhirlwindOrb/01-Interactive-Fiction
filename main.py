@@ -8,7 +8,7 @@ def load(l):
     j = json.loads(data)
     return j
 
-def = find_passage[game_desc, pid]:
+def find_passage(game_desc, pid):
     for p in game_desc["passages"]:
         if p["pid"] == pid:
             return p
@@ -27,15 +27,26 @@ def format_passage(description):
     description = re.sub(r'\[\[(.+?)\]\]',r'[ \1 ]',description)
     return description
 
-def update():
-    pass
+def update(current, choice, game_desc):
+    if choice == "":
+        return current
+    for l in current["links"]:
+        if l["name"].lower() == choice:
+            current = find_passage(game_desc, l["pid"])
+            return current
+    print("I shouldn't do that right now.")
+    return current
+
 
 def render(current):
+    print("\n\n")
     print(current["name"])
     print(format_passage(current["text"]))
+    print("\n\n")
 
 def get_input():
     choice = input("What should I do? (type quit to exit" )
+    choice = choice.lower().strip()
     return choice
 
 
@@ -45,7 +56,7 @@ def main():
     choice = ""
 
     while choice != "quit" and current != ():
-        update()
+        current = update(current, choice, game_desc)
         render(current)
         choice = get_input()
 
