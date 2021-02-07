@@ -45,7 +45,7 @@ def render(current):
     print("\n\n")
 
 def get_input():
-    choice = input("What should I do? (type quit to exit" )
+    choice = input("What should I do? (type quit to exit) " )
     choice = choice.lower().strip()
     return choice
 
