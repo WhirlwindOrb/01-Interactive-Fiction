@@ -27,7 +27,7 @@ def format_passage(description):
     description = re.sub(r'\[\[(.+?)\]\]',r'[ \1 ]',description)
     return description
 
-def update(current, choice, game_desc):
+def update(current,choice,game_desc):
     if choice == "":
         return current
     for l in current["links"]:
@@ -56,7 +56,7 @@ def main():
     choice = ""
 
     while choice != "quit" and current != ():
-        current = update(current, choice, game_desc)
+        current = update(current,choice,game_desc)
         render(current)
         choice = get_input()
 
