@@ -41,7 +41,7 @@ def render(current):
     print("\n\n")
     print(current["name"])
     print(format_passage(current["text"]))
-    print("\n")
+    print("\n\n")
 
 def get_input():
     choice = input("What should I do? (type quit to exit) " )
