@@ -1,17 +1,17 @@
 {
     "passages": [
       {
-        "text": "Class just finished for the day. Ann is still sitting in front of me.\n[[Talk to Ann|Classroom (Ann's desk)]]\n[[Walk out of the classroom|2nd floor hallway]]",
+        "text": "Class just finished for the day. Ann is still sitting in front of me.\n[[Talk to Ann->Classroom (Ann's desk)]]\n[[Walk out of the classroom->2nd floor hallway]] ",
         "links": [
           {
-            "name": "Talk to Ann|Classroom (Ann's desk)",
-            "link": "Talk to Ann|Classroom (Ann's desk)",
-            "broken": true
+            "name": "Talk to Ann",
+            "link": "Classroom (Ann's desk)",
+            "pid": "2"
           },
           {
-            "name": "Walk out of the classroom|2nd floor hallway",
-            "link": "Walk out of the classroom|2nd floor hallway",
-            "broken": true
+            "name": "Walk out of the classroom",
+            "link": "2nd floor hallway",
+            "pid": "3"
           }
         ],
         "name": "Classroom",
@@ -22,17 +22,17 @@
         }
       },
       {
-        "text": "I talk with Ann for a bit. She is inviting me to go shopping with her in the underground mall.\n[[Accept invitation|Underground Mall]]\n[[Decline invitation|Classroom]]",
+        "text": "I talk with Ann for a bit. She is inviting me to go shopping with her in the underground mall.\n[[Accept invitation->Underground Mall]]\n[[Decline invitation->Classroom]]",
         "links": [
           {
-            "name": "Accept invitation|Underground Mall",
-            "link": "Accept invitation|Underground Mall",
-            "broken": true
+            "name": "Accept invitation",
+            "link": "Underground Mall",
+            "pid": "4"
           },
           {
-            "name": "Decline invitation|Classroom",
-            "link": "Decline invitation|Classroom",
-            "broken": true
+            "name": "Decline invitation",
+            "link": "Classroom",
+            "pid": "1"
           }
         ],
         "name": "Classroom (Ann's desk)",
@@ -43,22 +43,27 @@
         }
       },
       {
-        "text": "I walk into the hallway and see students talking and rushing to get home. I also notice Ryuji standing by the stairs.\n[[Talk to Ryuji|2nd floor hallway (Ryuji)]]\n[[Go upstairs|3rd floor hallway]]\n[[Go downstairs|1st floor hallway]]",
+        "text": "I walk into the hallway and see students talking and rushing to get home. I also notice Ryuji standing by the stairs.\n[[Talk to Ryuji->2nd floor hallway (Ryuji)]]\n[[Go upstairs->3rd floor hallway]]\n[[Go downstairs->1st floor hallway]]\n[[Go back into the classroom->Classroom]] ",
         "links": [
           {
-            "name": "Talk to Ryuji|2nd floor hallway (Ryuji)",
-            "link": "Talk to Ryuji|2nd floor hallway (Ryuji)",
-            "broken": true
+            "name": "Talk to Ryuji",
+            "link": "2nd floor hallway (Ryuji)",
+            "pid": "6"
           },
           {
-            "name": "Go upstairs|3rd floor hallway",
-            "link": "Go upstairs|3rd floor hallway",
-            "broken": true
+            "name": "Go upstairs",
+            "link": "3rd floor hallway",
+            "pid": "7"
           },
           {
-            "name": "Go downstairs|1st floor hallway",
-            "link": "Go downstairs|1st floor hallway",
-            "broken": true
+            "name": "Go downstairs",
+            "link": "1st floor hallway",
+            "pid": "8"
+          },
+          {
+            "name": "Go back into the classroom",
+            "link": "Classroom",
+            "pid": "1"
           }
         ],
         "name": "2nd floor hallway",
@@ -69,12 +74,12 @@
         }
       },
       {
-        "text": "I shop with Ann in the mall for a while. I begin to notice Ann impulsively buying beauty products that I have no clue about. She then starts telling me about her modling job and how stressful it can be when put together with school life and thief life. We talk some more as I feel Ann's impulsiveness rub off on me. It is getting late... I should walk Ann back to the station and head home.\n[[Go home|LeBlanc]]",
+        "text": "I shop with Ann in the mall for a while. I begin to notice Ann impulsively buying beauty products that I have no clue about. She then starts telling me about her modling job and how stressful it can be when put together with school life and thief life. We talk some more as I feel Ann's impulsiveness rub off on me. It is getting late... I should walk Ann back to the station and head home.\n[[Go home->LeBlanc]]",
         "links": [
           {
-            "name": "Go home|LeBlanc",
-            "link": "Go home|LeBlanc",
-            "broken": true
+            "name": "Go home",
+            "link": "LeBlanc",
+            "pid": "5"
           }
         ],
         "name": "Underground Mall",
@@ -85,22 +90,22 @@
         }
       },
       {
-        "text": "I arrive at LeBlanc just as the last customers left. Sojiro and Futaba are here as well.\n[[Help Sojiro out with the kitchen|LeBlanc kitchen]]\n[[Play video games with Futaba|LeBlanc attic (Futaba)]]\n[[Go to bed|LeBlanc attic]]",
+        "text": "I arrive at LeBlanc just as the last customers left. Sojiro and Futaba are here as well.\n[[Help Sojiro out with the kitchen->LeBlanc kitchen]]\n[[Play video games with Futaba->LeBlanc attic (Futaba)]]\n[[Go to bed->LeBlanc attic]]",
         "links": [
           {
-            "name": "Help Sojiro out with the kitchen|LeBlanc kitchen",
-            "link": "Help Sojiro out with the kitchen|LeBlanc kitchen",
-            "broken": true
+            "name": "Help Sojiro out with the kitchen",
+            "link": "LeBlanc kitchen",
+            "pid": "16"
           },
           {
-            "name": "Play video games with Futaba|LeBlanc attic (Futaba)",
-            "link": "Play video games with Futaba|LeBlanc attic (Futaba)",
-            "broken": true
+            "name": "Play video games with Futaba",
+            "link": "LeBlanc attic (Futaba)",
+            "pid": "20"
           },
           {
-            "name": "Go to bed|LeBlanc attic",
-            "link": "Go to bed|LeBlanc attic",
-            "broken": true
+            "name": "Go to bed",
+            "link": "LeBlanc attic",
+            "pid": "15"
           }
         ],
         "name": "LeBlanc",
@@ -111,17 +116,17 @@
         }
       },
       {
-        "text": "I talk to Ryuji for a while and he is asking if I want to go workout with him.\n[[Accept invitation|Central Street gym]]\n[[Decline invitation|2nd floor hallway]]",
+        "text": "I talk to Ryuji for a while and he is asking if I want to go workout with him.\n[[Accept invitation->Central Street gym]]\n[[Decline invitation->2nd floor hallway]]",
         "links": [
           {
-            "name": "Accept invitation|Central Street gym",
-            "link": "Accept invitation|Central Street gym",
-            "broken": true
+            "name": "Accept invitation",
+            "link": "Central Street gym",
+            "pid": "9"
           },
           {
-            "name": "Decline invitation|2nd floor hallway",
-            "link": "Decline invitation|2nd floor hallway",
-            "broken": true
+            "name": "Decline invitation",
+            "link": "2nd floor hallway",
+            "pid": "3"
           }
         ],
         "name": "2nd floor hallway (Ryuji)",
@@ -132,27 +137,27 @@
         }
       },
       {
-        "text": "I walk to the 3rd floor hallway. I notice Makoto standing by the student council room.\n[[Talk to Makoto|3rd floor hallway (Makoto)]]\n[[Go to the library|Library]]\n[[Go upstairs|Rooftop]]\n[[Go downstairs|2nd floor hallway]]",
+        "text": "I walk to the 3rd floor hallway. I notice Makoto standing by the student council room.\n[[Talk to Makoto->3rd floor hallway (Makoto)]]\n[[Go to the library->Library]]\n[[Go upstairs->Rooftop]]\n[[Go downstairs->2nd floor hallway]]",
         "links": [
           {
-            "name": "Talk to Makoto|3rd floor hallway (Makoto)",
-            "link": "Talk to Makoto|3rd floor hallway (Makoto)",
-            "broken": true
+            "name": "Talk to Makoto",
+            "link": "3rd floor hallway (Makoto)",
+            "pid": "10"
           },
           {
-            "name": "Go to the library|Library",
-            "link": "Go to the library|Library",
-            "broken": true
+            "name": "Go to the library",
+            "link": "Library",
+            "pid": "11"
           },
           {
-            "name": "Go upstairs|Rooftop",
-            "link": "Go upstairs|Rooftop",
-            "broken": true
+            "name": "Go upstairs",
+            "link": "Rooftop",
+            "pid": "21"
           },
           {
-            "name": "Go downstairs|2nd floor hallway",
-            "link": "Go downstairs|2nd floor hallway",
-            "broken": true
+            "name": "Go downstairs",
+            "link": "2nd floor hallway",
+            "pid": "3"
           }
         ],
         "name": "3rd floor hallway",
@@ -163,17 +168,17 @@
         }
       },
       {
-        "text": "I walk to the 1st floor and notice many students heading home. Perhaps I should do the same.\n[[Ride to Shibuya|Shibuya]]\n[[Walk back to the 2nd floor|2nd floor hallway]]",
+        "text": "I walk to the 1st floor and notice many students heading home. Perhaps I should do the same.\n[[Ride to Shibuya->Shibuya]]\n[[Walk back to the 2nd floor->2nd floor hallway]]",
         "links": [
           {
-            "name": "Ride to Shibuya|Shibuya",
-            "link": "Ride to Shibuya|Shibuya",
-            "broken": true
+            "name": "Ride to Shibuya",
+            "link": "Shibuya",
+            "pid": "17"
           },
           {
-            "name": "Walk back to the 2nd floor|2nd floor hallway",
-            "link": "Walk back to the 2nd floor|2nd floor hallway",
-            "broken": true
+            "name": "Walk back to the 2nd floor",
+            "link": "2nd floor hallway",
+            "pid": "3"
           }
         ],
         "name": "1st floor hallway",
@@ -184,12 +189,12 @@
         }
       },
       {
-        "text": "I sweated it out with Ryuji at the Central Street gym for a while. We both seem to be exhausted now. \"Man, I think that at this rate, I'll be in top shape when I resume track!\" said Ryuji. I nod in agreement right after I catch my breath. We then cooled off in the back room and chatted with each other for a while about school and thief life. It is getting late... I should probably change my clothes and walk with Ryuji back to the station.\n[[Go home|LeBlanc]]",
+        "text": "I sweated it out with Ryuji at the Central Street gym for a while. We both seem to be exhausted now. \"Man, I think that at this rate, I'll be in top shape when I resume track!\" said Ryuji. I nod in agreement right after I catch my breath. We then cooled off in the back room and chatted with each other for a while about school and thief life. It is getting late... I should probably change my clothes and walk with Ryuji back to the station.\n[[Go home->LeBlanc]]",
         "links": [
           {
-            "name": "Go home|LeBlanc",
-            "link": "Go home|LeBlanc",
-            "broken": true
+            "name": "Go home",
+            "link": "LeBlanc",
+            "pid": "5"
           }
         ],
         "name": "Central Street gym",
@@ -200,17 +205,17 @@
         }
       },
       {
-        "text": "I speak with Makoto for a while, and she is now inviting me to go out to eat with her.\n[[Accept invitation|Shibuya diner]]\n[[Decline invitation|3rd floor hallway]]",
+        "text": "I speak with Makoto for a while, and she is now inviting me to go out to eat with her.\n[[Accept invitation->Shibuya diner]]\n[[Decline invitation->3rd floor hallway]]",
         "links": [
           {
-            "name": "Accept invitation|Shibuya diner",
-            "link": "Accept invitation|Shibuya diner",
-            "broken": true
+            "name": "Accept invitation",
+            "link": "Shibuya diner",
+            "pid": "14"
           },
           {
-            "name": "Decline invitation|3rd floor hallway",
-            "link": "Decline invitation|3rd floor hallway",
-            "broken": true
+            "name": "Decline invitation",
+            "link": "3rd floor hallway",
+            "pid": "7"
           }
         ],
         "name": "3rd floor hallway (Makoto)",
@@ -221,17 +226,17 @@
         }
       },
       {
-        "text": "I walk into the library and see other students studying and reading.\n[[Study|Library study corner]]\n[[Read|Library table]]",
+        "text": "I walk into the library and see other students studying and reading.\n[[Study->Library study corner]]\n[[Read->Library table]]",
         "links": [
           {
-            "name": "Study|Library study corner",
-            "link": "Study|Library study corner",
-            "broken": true
+            "name": "Study",
+            "link": "Library study corner",
+            "pid": "12"
           },
           {
-            "name": "Read|Library table",
-            "link": "Read|Library table",
-            "broken": true
+            "name": "Read",
+            "link": "Library table",
+            "pid": "13"
           }
         ],
         "name": "Library",
@@ -242,12 +247,12 @@
         }
       },
       {
-        "text": "I sit down, pull out my textbooks, and begin studying. It is somewhat difficult due to the noisiness of the other students, but I managed to finish my homework for the day. It is getting late... I should probably head home.\n[[Go home|LeBlanc]]",
+        "text": "I sit down, pull out my textbooks, and begin studying. It is somewhat difficult due to the noisiness of the other students, but I managed to finish my homework for the day. It is getting late... I should probably head home.\n[[Go home->LeBlanc]]",
         "links": [
           {
-            "name": "Go home|LeBlanc",
-            "link": "Go home|LeBlanc",
-            "broken": true
+            "name": "Go home",
+            "link": "LeBlanc",
+            "pid": "5"
           }
         ],
         "name": "Library study corner",
@@ -258,12 +263,12 @@
         }
       },
       {
-        "text": "I sit down at a table and pull out a book titled, \"The Merry Men.\" It is a book about the great folk hero, Robin Hood. I got fairly far into it, but I should stop now because of how late it is. I should probably head home.\n[[Go home|LeBlanc]]",
+        "text": "I sit down at a table and pull out a book titled, \"The Merry Men.\" It is a book about the great folk hero, Robin Hood. I got fairly far into it, but I should stop now because of how late it is. I should probably head home.\n[[Go home->LeBlanc]]",
         "links": [
           {
-            "name": "Go home|LeBlanc",
-            "link": "Go home|LeBlanc",
-            "broken": true
+            "name": "Go home",
+            "link": "LeBlanc",
+            "pid": "5"
           }
         ],
         "name": "Library table",
@@ -274,12 +279,12 @@
         }
       },
       {
-        "text": "Makoto and I arrive at the diner and sit down at a booth. I ordered a steak, while she ordered salmon. We both finished our meals and chatted some afterward. She talked about how she is starting to find studying pointless, and I wholeheartedly agree as I am far less scholarly than she is. We laugh about it and talk some more. It is getting late... I should probably take Makoto back to the station and head home.\n[[Go home|LeBlanc]]",
+        "text": "Makoto and I arrive at the diner and sit down at a booth. I ordered a steak, while she ordered salmon. We both finished our meals and chatted some afterward. She talked about how she is starting to find studying pointless, and I wholeheartedly agree as I am far less scholarly than she is. We laugh about it and talk some more. It is getting late... I should probably take Makoto back to the station and head home.\n[[Go home->LeBlanc]]",
         "links": [
           {
-            "name": "Go home|LeBlanc",
-            "link": "Go home|LeBlanc",
-            "broken": true
+            "name": "Go home",
+            "link": "LeBlanc",
+            "pid": "5"
           }
         ],
         "name": "Shibuya diner",
@@ -299,12 +304,12 @@
         }
       },
       {
-        "text": "I help Sojiro for a while. He and I chatted here and there while working. He then thanks me and closes shop. I am exhausted... I should probably go to bed.\n[[Go to bed|LeBlanc attic]]",
+        "text": "I help Sojiro for a while. He and I chatted here and there while working. He then thanks me and closes shop. I am exhausted... I should probably go to bed.\n[[Go to bed->LeBlanc attic]]",
         "links": [
           {
-            "name": "Go to bed|LeBlanc attic",
-            "link": "Go to bed|LeBlanc attic",
-            "broken": true
+            "name": "Go to bed",
+            "link": "LeBlanc attic",
+            "pid": "15"
           }
         ],
         "name": "LeBlanc kitchen",
@@ -315,22 +320,22 @@
         }
       },
       {
-        "text": "I arrive at Shibuya during rush hour and see many people passing by. I also see Yusuke doing what he refers to as, \"people watching.\"\n[[Talk to Yusuke|Shibuya (Yusuke)]]\n[[Go back to school|1st floor hallway]]\n[[Go home|LeBlanc]]",
+        "text": "I arrive at Shibuya during rush hour and see many people passing by. I also see Yusuke doing what he refers to as, \"people watching.\"\n[[Talk to Yusuke->Shibuya (Yusuke)]]\n[[Go home->LeBlanc]]\n[[Go back to school->1st floor hallway]]",
         "links": [
           {
-            "name": "Talk to Yusuke|Shibuya (Yusuke)",
-            "link": "Talk to Yusuke|Shibuya (Yusuke)",
-            "broken": true
+            "name": "Talk to Yusuke",
+            "link": "Shibuya (Yusuke)",
+            "pid": "18"
           },
           {
-            "name": "Go back to school|1st floor hallway",
-            "link": "Go back to school|1st floor hallway",
-            "broken": true
+            "name": "Go home",
+            "link": "LeBlanc",
+            "pid": "5"
           },
           {
-            "name": "Go home|LeBlanc",
-            "link": "Go home|LeBlanc",
-            "broken": true
+            "name": "Go back to school",
+            "link": "1st floor hallway",
+            "pid": "8"
           }
         ],
         "name": "Shibuya",
@@ -341,17 +346,17 @@
         }
       },
       {
-        "text": "I talk with Yusuke for a while, and he is now asking me to accompany him to view an art gallery.\n[[Accept invitation|Art gallery]]\n[[Decline invitation|Shibuya]]",
+        "text": "I talk with Yusuke for a while, and he is now asking me to accompany him to view an art gallery.\n[[Accept invitation->Art gallery]]\n[[Decline invitation->Shibuya]]",
         "links": [
           {
-            "name": "Accept invitation|Art gallery",
-            "link": "Accept invitation|Art gallery",
-            "broken": true
+            "name": "Accept invitation",
+            "link": "Art gallery",
+            "pid": "19"
           },
           {
-            "name": "Decline invitation|Shibuya",
-            "link": "Decline invitation|Shibuya",
-            "broken": true
+            "name": "Decline invitation",
+            "link": "Shibuya",
+            "pid": "17"
           }
         ],
         "name": "Shibuya (Yusuke)",
@@ -362,12 +367,12 @@
         }
       },
       {
-        "text": "I arrive with Yusuke to the art gallery where his piece is displayed. He begins comparing other pieces with his own and soon gets discouraged. I successfully cheer him up by telling him that his piece is like no other and truly is beautiful. We look around some more and decided to head back to the station.\n[[Go home|LeBlanc]]",
+        "text": "I arrive with Yusuke to the art gallery where his piece is displayed. He begins comparing other pieces with his own and soon gets discouraged. I successfully cheer him up by telling him that his piece is like no other and truly is beautiful. We look around some more and decided to head back to the station.\n[[Go home->LeBlanc]]",
         "links": [
           {
-            "name": "Go home|LeBlanc",
-            "link": "Go home|LeBlanc",
-            "broken": true
+            "name": "Go home",
+            "link": "LeBlanc",
+            "pid": "5"
           }
         ],
         "name": "Art gallery",
@@ -378,12 +383,12 @@
         }
       },
       {
-        "text": "Futaba and I play a fighting game together. She has gotten much better since we last played. Has she been practicing on her own? After several matches, we went downstairs and I fixed some coffee for both of us. I made sure to make it well since Sojiro was watching. After some chatting with Futaba, Sojiro decided to close up shop, so he and Futaba went home. I should probably get ready for bed as well.\n[[Go to bed|LeBlanc attic]]",
+        "text": "Futaba and I play a fighting game together. She has gotten much better since we last played. Has she been practicing on her own? After several matches, we went downstairs and I fixed some coffee for both of us. I made sure to make it well since Sojiro was watching. After some chatting with Futaba, Sojiro decided to close up shop, so he and Futaba went home. I should probably get ready for bed as well.\n[[Go to bed->LeBlanc attic]]",
         "links": [
           {
-            "name": "Go to bed|LeBlanc attic",
-            "link": "Go to bed|LeBlanc attic",
-            "broken": true
+            "name": "Go to bed",
+            "link": "LeBlanc attic",
+            "pid": "15"
           }
         ],
         "name": "LeBlanc attic (Futaba)",
@@ -394,17 +399,17 @@
         }
       },
       {
-        "text": "I walk up to the rooftop and see Haru tending to some plants. Nobody else is here.\n[[Talk to Haru|Rooftop (Haru)]]\n[[Go downstairs|3rd floor hallway]]",
+        "text": "I walk up to the rooftop and see Haru tending to some plants. Nobody else is here.\n[[Talk to Haru->Rooftop (Haru)]]\n[[Go downstairs->3rd floor hallway]]",
         "links": [
           {
-            "name": "Talk to Haru|Rooftop (Haru)",
-            "link": "Talk to Haru|Rooftop (Haru)",
-            "broken": true
+            "name": "Talk to Haru",
+            "link": "Rooftop (Haru)",
+            "pid": "22"
           },
           {
-            "name": "Go downstairs|3rd floor hallway",
-            "link": "Go downstairs|3rd floor hallway",
-            "broken": true
+            "name": "Go downstairs",
+            "link": "3rd floor hallway",
+            "pid": "7"
           }
         ],
         "name": "Rooftop",
@@ -415,17 +420,17 @@
         }
       },
       {
-        "text": "I talk to Haru, and she is inviting me to go see a movie.\n[[Accept invitation|Shibuya theater]]\n[[Decline invitation|Rooftop]]",
+        "text": "I talk to Haru and she is inviting me to go see a movie.\n[[Accept invitation->Shibuya theater]]\n[[Decline invitation->Rooftop]]",
         "links": [
           {
-            "name": "Accept invitation|Shibuya theater",
-            "link": "Accept invitation|Shibuya theater",
-            "broken": true
+            "name": "Accept invitation",
+            "link": "Shibuya theater",
+            "pid": "23"
           },
           {
-            "name": "Decline invitation|Rooftop",
-            "link": "Decline invitation|Rooftop",
-            "broken": true
+            "name": "Decline invitation",
+            "link": "Rooftop",
+            "pid": "21"
           }
         ],
         "name": "Rooftop (Haru)",
@@ -436,12 +441,12 @@
         }
       },
       {
-        "text": "Haru and I arrive at the theater in Central Street and grab our seats as the movie began. It is a chick-flick about a knight who helps a princess out of an arranged marriage made by the king and the knight ends up marrying the woman himself. Haru could not stop crying during the film. We walk out into the lobby after the movie is over and talk about it for a while. Haru then expresses how she sometimes feel like that she is the princess from the film and is waiting for her knight in shining armor. I tell her that he might be closer than she thinks. It is getting late... I should escort Haru back to the station and head home.\n[[Go home|LeBlanc]]",
+        "text": "Haru and I arrive at the theater in Central Street and grab our seats as the movie began. It is a chick-flick about a knight who helps a princess out of an arranged marriage made by the king and the knight ends up marrying the woman himself. Haru could not stop crying during the film. We walk out into the lobby after the movie is over and talk about it for a while. Haru then expresses how she sometimes feel like that she is the princess from the film and is waiting for her knight in shining armor. I tell her that he might be closer than she thinks. It is getting late... I should escort Haru back to the station and head home.\n[[Go home->LeBlanc]]",
         "links": [
           {
-            "name": "Go home|LeBlanc",
-            "link": "Go home|LeBlanc",
-            "broken": true
+            "name": "Go home",
+            "link": "LeBlanc",
+            "pid": "5"
           }
         ],
         "name": "Shibuya theater",
